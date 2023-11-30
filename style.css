@@ -1,42 +1,7 @@
-/* Basic styles for the hero section */
-.hero {
-  height: 80vh;
-  background-image: url('path_to_your_image.jpg'); /* Replace with your image */
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-}
-
-.hero-content {
-  max-width: 800px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.cta-btn {
-  display: inline-block;
-  padding: 12px 24px;
-  margin-top: 20px;
-  background-color: #2ecc71;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.cta-btn:hover {
-  background-color: #27ae60;
-}
 
 /* Basic header styles */
 header {
-  background-color: #2ecc71;
+  background-color: #000000;
   padding: 10px 0;
 }
 
@@ -48,7 +13,7 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin: 0 10px;
 }
 
@@ -57,6 +22,7 @@ nav ul li a {
   color: #fff;
   font-weight: bold;
   position: relative;
+  padding-bottom: 5px;
 }
 
 nav ul li a::after {
@@ -66,12 +32,176 @@ nav ul li a::after {
   height: 2px;
   background-color: #fff;
   position: absolute;
-  bottom: -2px;
-  left: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   transition: width 0.3s ease;
 }
 
 nav ul li a:hover::after,
 nav ul li a:focus::after {
   width: 100%;
+}
+
+/* Basic styles for the hero section */
+.hero {
+  position: relative;
+  height: 90vh;
+  background-image: url(background1.jpg); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+/* Styles for the content within the hero section */
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: rgb(47, 181, 103);
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2ecc71;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #27ae60;
+}
+/* Styles for the sections */
+#about,
+#services,
+#how-it-works {
+  padding: 80px 0;
+}
+
+.about-container,
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-container h2,
+.section-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-container p,
+.section-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-container ul,
+.section-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-container ul li,
+.section-content ul li {
+  margin-bottom: 10px;
+}
+
+.section-content ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.section-content ol li {
+  margin-bottom: 10px;
+}
+/* Hover effect for sections */
+#about:hover,
+#services:hover,
+#how-it-works:hover {
+  background-color: #f2f2f2; /* Change to the desired background color on hover */
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* Styles for the "How We Solve It" section */
+#how-we-solve-it {
+  padding: 80px 0;
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.solution-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.info-item {
+  flex: 0 0 calc(50% - 30px); /* Adjust the width of info items */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+
+
+/* Styles for the Market Analysis section */
+#market-analysis {
+  padding: 80px 0;
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.market-figures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.figure-item {
+  flex: 0 0 calc(33.3% - 30px); /* Adjust the width of figure items */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.figure-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
